@@ -19,7 +19,7 @@ const userSchema = `
     refreshToken TEXT NOT NULL, 
     tokenExpiresAt TIMESTAMP NOT NULL,
 
-    verifyToken VARCHAR(6) NULL, -- Stores OTP for email verification
+    verifyToken VARCHAR(255) NULL, -- Stores TOKEN for email verification
     verifyTokenExpiry TIMESTAMP NULL, -- Expiration time of OTP
 
     passwordResetToken VARCHAR(255) NULL, -- Stores token for password reset
